@@ -6,7 +6,7 @@ export const proxy = async (req: NextRequest) => {
   const pathname = req.nextUrl.pathname;
 
   const roomMatch = pathname.match(/^\/room\/([^/]+)$/);
-  if (!roomMatch) return NextResponse.redirect(new URL("/", req.url));
+  if (!roomMatch) return NextResponse.next();
 
   const roomId = roomMatch[1];
 
@@ -45,5 +45,5 @@ export const proxy = async (req: NextRequest) => {
 };
 
 export const config = {
-  matcher: "/room/:path*",
+  matcher: ["/room/:path*"],
 };

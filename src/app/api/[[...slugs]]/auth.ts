@@ -33,3 +33,4 @@ export const authMiddleware = new Elysia({
     }
     return { auth: { roomId, token, connected } };
   });
+  
