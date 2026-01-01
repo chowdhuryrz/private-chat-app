@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { nanoid } from "zod";
+import { nanoid } from "nanoid";
 
 const ANIMALS = ["wolf", "hawk", "shark", "bear", "lion"];
 
