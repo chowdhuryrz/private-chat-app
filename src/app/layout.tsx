@@ -9,8 +9,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Private Chat App",
-  description: "A private chat app.",
+  title: "Ephemeral - Self-Destructing Chat App",
+  description:
+    "A private, self-destructing chat room application built with Next.js and Upstash. Create secure chat rooms with unique identities, send real-time messages, and destroy all conversation history with a single action.",
 };
 
 export default function RootLayout({
